@@ -12,7 +12,6 @@ import com.teaphy.arc.R
  * @author Tiany
  * @date 2017/9/14 0014
  */
-@Suppress("DEPRECATION")
 abstract class BaseRecyclerViewActivity<VH: RecyclerView.ViewHolder, out T : RecyclerView.Adapter<VH>>: BaseActivity(){
 
     lateinit var recyclerView: RecyclerView
