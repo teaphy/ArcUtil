@@ -12,9 +12,10 @@ import com.teaphy.arc.R
  * @author Tiany
  * @date 2017/9/14 0014
  */
-abstract class BaseRecyclerViewActivity<VH: RecyclerView.ViewHolder, out T : RecyclerView.Adapter<VH>>: BaseActivity(){
+abstract class BaseRecyclerViewActivity<VH: RecyclerView.ViewHolder, T : RecyclerView.Adapter<VH>>: BaseActivity(){
 
     lateinit var recyclerView: RecyclerView
+    lateinit var mAdapter: T
     val mList = mutableListOf<String>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,6 +24,9 @@ abstract class BaseRecyclerViewActivity<VH: RecyclerView.ViewHolder, out T : Rec
     }
 
     private fun initRecyclerView() {
+
+        initAdapter()
+
         recyclerView = findViewById(R.id.recyclerView)
         val manager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         val divider = DividerItemDecoration(this, DividerItemDecoration.VERTICAL)
@@ -31,10 +35,13 @@ abstract class BaseRecyclerViewActivity<VH: RecyclerView.ViewHolder, out T : Rec
         divider.setDrawable(paintDrawable)
         recyclerView.apply {
             layoutManager = manager
-            adapter = initAdapter()
+            adapter = mAdapter
             addItemDecoration(divider)
         }
     }
 
-    abstract fun initAdapter(): T
+    /**
+     * 必须初始化Adapter
+     */
+    abstract fun initAdapter()
 }
