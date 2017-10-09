@@ -1,5 +1,5 @@
 <font size = 6>
-*V 1.0说明文档*
+[![](https://jitpack.io/v/teaphy/ArcUtil.svg)](https://jitpack.io/#teaphy/ArcUtil)
 </font>
 
 <hr>
