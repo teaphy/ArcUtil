@@ -18,12 +18,6 @@ class MainActivity : BaseRecyclerViewActivity<AdapterSingleText.MyHolder, Adapte
         mList.addAll(resources.getStringArray(R.array.arrayUtilFeature))
     }
 
-    override fun initView() {
-    }
-
-    override fun setListener() {
-    }
-
     override fun initAdapter() {
         mAdapter = AdapterSingleText(mList, object : OnItemClickCallback {
             override fun onClick(position: Int) {
@@ -31,7 +25,6 @@ class MainActivity : BaseRecyclerViewActivity<AdapterSingleText.MyHolder, Adapte
             }
         })
     }
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -12,13 +12,13 @@ import com.teaphy.arc.R
  * @author Tiany
  * @date 2017/9/14 0014
  */
-abstract class BaseRecyclerViewActivity<VH: RecyclerView.ViewHolder, T : RecyclerView.Adapter<VH>>: BaseActivity(){
+abstract class BaseRecyclerViewActivity<VH: RecyclerView.ViewHolder, T : RecyclerView.Adapter<VH>>: BaseSingleActivity(){
 
     lateinit var recyclerView: RecyclerView
     lateinit var mAdapter: T
     val mList = mutableListOf<String>()
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+     override  fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         initRecyclerView()
     }
