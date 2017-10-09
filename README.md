@@ -17,7 +17,7 @@
 在app gradle中：
 
 	dependencies {
-	    compile 'com.github.teaphy:ArcUtil:1.0'
+	    compile 'com.github.teaphy:ArcUtil:1.0.2'
 	}
 
 <hr>
