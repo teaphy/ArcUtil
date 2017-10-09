@@ -1,6 +1,5 @@
-<font size = 6>
+
 [![](https://jitpack.io/v/teaphy/ArcUtil.svg)](https://jitpack.io/#teaphy/ArcUtil)
-</font>
 
 <hr>
 
