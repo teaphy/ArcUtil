@@ -45,13 +45,13 @@ initAdapter()
 		
 		***
 	
-	    override fun initAdapter() {
-	        mAdapter = AdapterSingleText(mList, object : OnItemClickCallback {
-	            override fun onClick(position: Int) {
+	        override fun initAdapter() {
+	            mAdapter = AdapterSingleText(mList, object : OnItemClickCallback {
+	                override fun onClick(position: Int) {
 	
-	            }
-	        })
-	    }
+	                }
+	            })
+	        }
 	
 		override fun onCreate(savedInstanceState: Bundle?) {
 			super.onCreate(savedInstanceState)
