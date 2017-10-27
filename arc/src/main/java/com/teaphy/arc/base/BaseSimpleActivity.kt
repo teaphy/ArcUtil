@@ -1,11 +1,13 @@
 package com.teaphy.arc.base
 
+import android.os.Bundle
+
 /**
  * @desc
  * @author Tiany
  * @date 2017/10/9 0009
  */
-abstract class BaseSingleActivity: BaseActivity() {
+abstract class BaseSimpleActivity : BaseActivity() {
 
 
     override fun initData() {
@@ -15,5 +17,9 @@ abstract class BaseSingleActivity: BaseActivity() {
     }
 
     override fun setListener() {
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
     }
 }

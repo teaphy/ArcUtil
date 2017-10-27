@@ -12,7 +12,7 @@ import com.teaphy.arc.R
  * @author Tiany
  * @date 2017/9/14 0014
  */
-abstract class BaseRecyclerViewActivity<VH: RecyclerView.ViewHolder, T : RecyclerView.Adapter<VH>>: BaseSingleActivity(){
+abstract class BaseRecyclerViewActivity<VH: RecyclerView.ViewHolder, T : RecyclerView.Adapter<VH>>: BaseSimpleActivity(){
 
     lateinit var recyclerView: RecyclerView
     lateinit var mAdapter: T
