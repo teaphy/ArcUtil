@@ -17,19 +17,23 @@
 在app gradle中：
 
 	dependencies {
-	    compile 'com.github.teaphy:ArcUtil:1.0.2'
+	    implementation 'com.github.teaphy:ArcUtil:1.0.3'
 	}
 
 <hr>
 
 # BaseActivity #
 
-该基类Activity继承于AppCompatActivity，在OnCreate中声明了一些初始化方法：
+该基类继承于AppCompatActivity，在OnCreate中声明了一些初始化方法：
 
 - initData()
 - initView()
 - initTitle()
 - setListener()
+
+# BaseSimpleActivity#
+
+该类继承于BaseActivity，是BaseActivity的简单实现
 
 # BaseRecyclerViewActivity #
 
